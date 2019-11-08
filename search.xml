@@ -14,6 +14,17 @@
       </tags>
   </entry>
   <entry>
+    <title>陈子衿测试文章</title>
+    <url>/2019/10/30/%E9%99%88%E5%AD%90%E8%A1%BF%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<p>这是一篇测试文章，欢迎关注作者博客[1]:<a href="https://luckcsk.github.io/kun.github.io/" target="_blank" rel="noopener">https://luckcsk.github.io/kun.github.io/</a></p><h2 id><a href="#" class="headerlink" title></a></h2>]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2019/10/30/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a>
