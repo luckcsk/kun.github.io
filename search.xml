@@ -16,7 +16,29 @@
   <entry>
     <title>陈子衿测试文章</title>
     <url>/2019/10/30/%E9%99%88%E5%AD%90%E8%A1%BF%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<p>这是一篇测试文章，欢迎关注作者博客[1]:<a href="https://github.com/luckcsk" target="_blank" rel="noopener">https://github.com/luckcsk</a></p><h2 id><a href="#" class="headerlink" title></a></h2>]]></content>
+    <content><![CDATA[<p>这是一篇测试文章，欢迎关注作者博客[1]:<a href="https://github.com/luckcsk" target="_blank" rel="noopener">https://github.com/luckcsk</a></p><h2 id><a href="#" class="headerlink" title></a></h2><p>1.网站服务软件目录结构</p><p><code>/etc/logrotate.d/nginx       ---实现日志切割功能</code></p><blockquote>
+<p><strong>利用系统自带的软件实现日志切割</strong>    </p>
+<p><code>logrotate 程序</code></p>
+<p><code>cat /etc/logrotate.conf ##主配置文件</code></p>
+<hr>
+<p>weekly        日志切割周期按天或小时</p>
+</blockquote><a id="more"></a>
+
+
+
+<blockquote>
+<p>rotate 4       切割日志文件留存几次</p>
+<p>create          创建新的日志信息</p>
+<p>dateext        切割后日志文件标识信息(按照时间进行标识)</p>
+<hr>
+<p>以上类似于一个局部的配置</p>
+<p>include /etc/logrotate.d     加载目录中配置文件</p>
+<p>利用编写脚本实现日志切割</p>
+</blockquote>
+<p>​    </p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line">mv /var/log/nginx/access.log /var/log/nginx/access_$(date +%F_%T).log</span><br><span class="line">systemctl reload nginx 		##生成日志</span><br></pre></td></tr></table></figure>
+
+]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
